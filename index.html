@@ -1,20 +1,25 @@
 <!DOCTYPE html>
+<html>
 
 <head>
-    <meta charset="utf-8">
-    <title>BD of Lab of Legal Analytics, NTU</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-    <!-- Vendor CSS Files -->
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <title>Interdisciplinary Seminar on Decision-Making in Persons with Disabilities</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css" />
 
-    <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- Font Google -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
         #upper {
             width: 100%;
@@ -35,189 +40,405 @@
             position: absolute;
             top: 40%;
             left: 25%;
-            color: rgb(255, 255, 255);
-        }
-
-        .member:hover .member-img {
-            filter: blur(3px);
-        }
-
-        .member:hover .member-info-pic {
-            transform: translate(-50%, -50%);
-            opacity: 1;
-        }
-
-        .member-info-pic {
-            position: absolute;
-            top: 45%;
-            left: 50%;
-            transform: translate(-50%, 40%);
-            color: rgb(248, 248, 248);
-            opacity: 0;
-            transition: all .5s;
-            backface-visibility: hidden;
         }
     </style>
 </head>
 
 <body>
-    <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top">
-        <div class="container d-flex align-items-center justify-content-between">
-
-            <h1 class="logo"><a href="index.html">Digital Humanities and Legal Analytics</a></h1>
-
-            <nav id="navbar" class="navbar">
-                <ul>
-                    <li><a class="nav-link scrollto active" href="#upper">Home</a></li>
-                    <li><a class="nav-link scrollto" href="#team">Member</a></li>
-                    <li><a class="nav-link scrollto" href="#teacher-section">Mentor</a></li>
-                    <li><a class="getstarted scrollto" href="#services">Get Started</a></li>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container"> <a class="navbar-brand navbar-logo" href="#"> UFO Course </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span
+                    class="fas fa-bars"></span> </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="0">Home</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="1">About</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="2">Services</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="3">Contact</a> </li>
                 </ul>
-                <i class="bi bi-list mobile-nav-toggle"></i>
-            </nav>
-            <!-- .navbar -->
+            </div>
         </div>
-    </header>
-    <!-- End Header -->
+    </nav>
+    <!-- End Navbar -->
 
     <!-- ======= video Section ======= -->
-    <section id="upper">
-        <div class="bg-video">
-            <video class="bg-video__content" autoplay muted loop>
-                <source src="./assets/images/video_head.mp4" type="video/mp4">
-            </video>
-        </div>
-        <div class="container upper-content" data-aos="fade-up" data-aos-delay="100">
-            <div class="row">
-                <div class="col-xl-7 col-lg-9 text-center">
-                    <h1>UFO Course</h1>
-                    <h2>Digital Humanities feat. Legal Analytics by H.L.Shao(NTNU) and S.C.Huang(NTU).</h2>
+    <div data-scroll-index='0'>
+        <section id="upper">
+            <div class="bg-video">
+                <video class="bg-video__content" autoplay muted loop>
+                    <source src="./images/video_head.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="container upper-content" data-aos="fade-up" data-aos-delay="100">
+                <div class="row">
+                    <div class="col-xl-7 col-lg-9 text-center">
+                        <h1 style="color:rgb(255, 255, 255);">Interdisciplinary Seminar on Decision-Making in Persons
+                            with Disabilities</h1>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
     <!-- End video -->
 
-    <main id="main">
-        <!-- ======= Services Section ======= -->
-
-        <section class="about-video">
-            <div class="container" data-aos="fade-up">
-                <div class="section-title">
-                    <h2>Student</h2>
-                    <p>Homework from student.</p>
+    <!-- About -->
+    <div class="about-us section-padding" data-scroll-index='1'>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 section-title text-center">
+                    <h3>We Are Best At Our Work</h3>
+                    <p>Suspendisse fringilla eget arcu et bibendum. Vestibulum elementum dui tempus dolor gravida, vel
+                        mattis erat
+                        fermentum.</p>
+                    <span class="section-title-line"></span>
                 </div>
-                <div class="row">
-
-                    <div class="col-lg-6 video-box align-self-baseline" data-aos="fade-right" data-aos-delay="100">
-                        <img src="./assets/images/hw.png" class="img-fluid" alt="">
-                    </div>
-
-                    <div class="col-lg-6 pt-3 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
-                        <h3>學生作業範例1</h3>
-                        <p>
-                            本學生範例是以強權外交，並從從「兩大革命家」看第二年結束、從「現實政治自食惡果」看第三年結束、從「步向毀滅的機制」看第四年結束、從「歐洲均勢」看第五年總結。來做分析
-                        </p>
-                        <a href="./assets/homeworks/homework1.html" style="text-decoration: none;">READ MORE <i
-                                class="bi bi-box-arrow-right"></i> </a>
-                    </div>
-                </div>
-                <p></p>
-                <div class="row">
-
-                    <div class="col-lg-6 video-box align-self-baseline" data-aos="fade-right" data-aos-delay="100">
-                        <img src="./assets/images/hw2.png" class="img-fluid" alt="">
-                    </div>
-
-                    <div class="col-lg-6 pt-3 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
-                        <h3>學生作業範例2</h3>
-                        <p>
-                            本學生範例是以東亞政經模擬實，並從策略守住原有的領土、擴張領土（荷蘭，比利時、防止奧國侵越，來做分析、別且檢討出結論預估錯敵人、交錯朋友、英法德三國緊張關係
-                        </p>
-                        <a href="./assets/homeworks/homework2.html" style="text-decoration: none;">READ MORE <i
-                                class="bi bi-box-arrow-right"></i> </a>
+                <div class="col-md-6 mb-50">
+                    <div class="section-info">
+                        <div class="sub-title-paragraph">
+                            <h4>Siehchuen Huang</h4>
+                            <h5>If you have right set of mind and thus you can rule the world. Cheers!</h5>
+                            <p>Professor Sieh-Chuen Huang is an associate professor of civil law. She received her
+                                Bachelor Degree of
+                                Laws from NTU, Taiwan (2001) and the master and doctoral degree (Doctor of Juridical
+                                Science) from
+                                Hokkaido University, Japan (2004 and 2006). She joined the College of Law at NTU in
+                                August 2009 and focuses her research
+                                interests on family law, guardianship, trusts and estates, and intergenerational
+                                property transfer in
+                                aged society. Her major publications include An Analysis on the Images and
+                                Principles of
+                                Succession, 40
+                                National Taiwan University L.J. 2185-2247 (2011), Social Change and Testament Law in
+                                Taiwan, 22 J. of
+                                Faculty of Law Ryutsu Keizai University 71-104 (2012), Adult Guardianship in Taiwan:
+                                A
+                                Focus on Guardian
+                                Financial Decision-Making and the Family's Role, 9 J. Int'l Aging L. and Pol'y
+                                127-150
+                                (2016).</p>
+                        </div>
+                        <a href="http://homepage.ntu.edu.tw/~schhuang/English.html" class="anchor-btn">Learn more <i
+                                class="fas fa-arrow-right pd-lt-10"></i></a>
                     </div>
                 </div>
-
+                <div class="col-md-6 mb-50">
+                    <div class="section-img"> <img src="images/pic_huang.jpg" alt="" class="img-responsive" />
+                    </div>
+                </div>
+                <div class="col-md-6 mb-50">
+                    <div class="section-img"> <img src="images/pic_cat.jpg" alt="" class="img-responsive" width="400" />
+                    </div>
+                </div>
+                <div class="col-md-6 mb-50">
+                    <div class="section-info">
+                        <div class="sub-title-paragraph">
+                            <h4>Siehchuen Huang</h4>
+                            <h5>If you have right set of mind and thus you can rule the world. Cheers!</h5>
+                            <p>Professor Sieh-Chuen Huang is an associate professor of civil law. She received her
+                                Bachelor Degree of
+                                Laws from NTU, Taiwan (2001) and the master and doctoral degree (Doctor of Juridical
+                                Science) from
+                                Hokkaido University, Japan (2004 and 2006). She joined the College of Law at NTU in
+                                August 2009 and focuses her research
+                                interests on family law, guardianship, trusts and estates, and intergenerational
+                                property transfer in
+                                aged society. Her major publications include An Analysis on the Images and Principles of
+                                Succession, 40
+                                National Taiwan University L.J. 2185-2247 (2011), Social Change and Testament Law in
+                                Taiwan, 22 J. of
+                                Faculty of Law Ryutsu Keizai University 71-104 (2012), Adult Guardianship in Taiwan: A
+                                Focus on Guardian
+                                Financial Decision-Making and the Family's Role, 9 J. Int'l Aging L. and Pol'y 127-150
+                                (2016).</p>
+                        </div>
+                        <a href="http://homepage.ntu.edu.tw/~schhuang/English.html" class="anchor-btn">Learn more <i
+                                class="fas fa-arrow-right pd-lt-10"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-50">
+                    <div class="section-info">
+                        <div class="sub-title-paragraph">
+                            <h4>Siehchuen Huang</h4>
+                            <h5>If you have right set of mind and thus you can rule the world. Cheers!</h5>
+                            <p>Professor Sieh-Chuen Huang is an associate professor of civil law. She received her
+                                Bachelor Degree of
+                                Laws from NTU, Taiwan (2001) and the master and doctoral degree (Doctor of Juridical
+                                Science) from
+                                Hokkaido University, Japan (2004 and 2006). She joined the College of Law at NTU in
+                                August 2009 and focuses her research
+                                interests on family law, guardianship, trusts and estates, and intergenerational
+                                property transfer in
+                                aged society. Her major publications include An Analysis on the Images and Principles of
+                                Succession, 40
+                                National Taiwan University L.J. 2185-2247 (2011), Social Change and Testament Law in
+                                Taiwan, 22 J. of
+                                Faculty of Law Ryutsu Keizai University 71-104 (2012), Adult Guardianship in Taiwan: A
+                                Focus on Guardian
+                                Financial Decision-Making and the Family's Role, 9 J. Int'l Aging L. and Pol'y 127-150
+                                (2016).</p>
+                        </div>
+                        <a href="http://homepage.ntu.edu.tw/~schhuang/English.html" class="anchor-btn">Learn more <i
+                                class="fas fa-arrow-right pd-lt-10"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-50">
+                    <div class="section-img"> <img src="images/pic_cat.jpg" alt="" class="img-responsive" width="400" />
+                    </div>
+                </div>
+                <div class="col-md-6 mb-50">
+                    <div class="section-img"> <img src="images/pic_cat.jpg" alt="" class="img-responsive" width="400" />
+                    </div>
+                </div>
+                <div class="col-md-6 mb-50">
+                    <div class="section-info">
+                        <div class="sub-title-paragraph">
+                            <h4>Siehchuen Huang</h4>
+                            <h5>If you have right set of mind and thus you can rule the world. Cheers!</h5>
+                            <p>Professor Sieh-Chuen Huang is an associate professor of civil law. She received her
+                                Bachelor Degree of
+                                Laws from NTU, Taiwan (2001) and the master and doctoral degree (Doctor of Juridical
+                                Science) from
+                                Hokkaido University, Japan (2004 and 2006). She joined the College of Law at NTU in
+                                August 2009 and focuses her research
+                                interests on family law, guardianship, trusts and estates, and intergenerational
+                                property transfer in
+                                aged society. Her major publications include An Analysis on the Images and Principles of
+                                Succession, 40
+                                National Taiwan University L.J. 2185-2247 (2011), Social Change and Testament Law in
+                                Taiwan, 22 J. of
+                                Faculty of Law Ryutsu Keizai University 71-104 (2012), Adult Guardianship in Taiwan: A
+                                Focus on Guardian
+                                Financial Decision-Making and the Family's Role, 9 J. Int'l Aging L. and Pol'y 127-150
+                                (2016).</p>
+                        </div>
+                        <a href="http://homepage.ntu.edu.tw/~schhuang/English.html" class="anchor-btn">Learn more <i
+                                class="fas fa-arrow-right pd-lt-10"></i></a>
+                    </div>
+                </div>
             </div>
-        </section>
-        <section id="student-section" class="team section-bg">
+        </div>
+    </div>
 
-            <div class="container" data-aos="fade-up">
-                <div class="section-title">
-                    <h2>若干授課片段</h2>
-                    <p>Homework from student.</p>
+    <!-- End About -->
+
+    <!-- Services -->
+    <div class="services section-padding bg-grey" data-scroll-index='2'>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 section-title text-center">
+                    <h3>We Are Best At Our Service</h3>
+                    <p>Students Project</p>
+                    <span class="section-title-line"></span>
                 </div>
-        </section>
-        <!-- End Team Section -->
-        <!-- ======= Call To Action Section ======= -->
-        <section id="cta" class="cta">
-            <div class="container" data-aos="zoom-out">
-                <div class="row g-5">
-                    <div
-                        class="col-lg-8 col-md-6 content d-flex flex-column justify-content-center order-last order-md-first">
-                        <h3>Sieh-Chuen Huang</h3>
-                        <p> Professor Sieh-Chuen Huang is an associate professor of civil law. She received her
-                            Bachelor
-                            Degree of
-                            Laws from NTU, Taiwan (2001) and the master and doctoral degree (Doctor of Juridical
-                            Science) from
-                            Hokkaido University, Japan (2004 and 2006). .</p>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mb-30">
+                    <div class="service-box bg-white text-center">
+                        <div class="icon-text">
+                            <h4 class="title-box">Residence and risk of homelessness</h4>
+                            <p>Students : Madita Dickmeis,Inga Ueckermann,Verena Burke,Hsin Jung Chun,Huang An Yuan,Sun
+                                Yu Chien</p>
+                            <p>Sed malesuada, est eget condimentum iaculis, nisi ex facilisis metus.</p>
+                            <a href="./homeworks/htmlfile/HW1.html" class="anchor-btn">See more <i
+                                    class="fas fa-arrow-right pd-lt-10"></i></a>
+                        </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 order-first order-md-last d-flex align-items-center">
-                        <div class="img">
-                            <img src="assets/images/pic_huang.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mb-30">
+                    <div class="service-box bg-white text-center">
+                        <div class="icon-text">
+                            <h4 class="title-box">Peter, a person under assistance in Taiwan & Germany</h4>
+                            <p>Students : Tien, Yu-Tzu, Li, Yu-Lin, Xie, Dai-Ling, Friederike Basten, Nicole Görtz,
+                                Julia Peetz, Melinda Titze</p>
+                            <p>Peter’s case outline & possible issues</p>
+                            <a href="./homeworks/htmlfile/HW2.html" class="anchor-btn">See more <i
+                                    class="fas fa-arrow-right pd-lt-10"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mb-30">
+                    <div class="service-box bg-white text-center">
+                        <div class="icon-text">
+                            <h4 class="title-box">International cooperation seminar</h4>
+                            <p>Students :CHIU, LI-WUNㄝ 郭恩佳 KUO, EN-CHIAㄝ 林大偉 LIN, DA-WEI</p>
+                            <p>German law of “Betreuung” (health care),Taiwanese laws on medical treatments and patients
+                            </p>
+                            <a href="./homeworks/htmlfile/HW3.html" class="anchor-btn">See more <i
+                                    class="fas fa-arrow-right pd-lt-10"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mb-30">
+                    <div class="service-box bg-white text-center">
+                        <div class="icon-text">
+                            <h4 class="title-box">International Interdisciplinary Seminar on Decision-making in Persons
+                                with Disabilities</h4>
+                            <p>Students : Isabell Regier, Cassey Ler, Nadine Thomé, Miriam Klotz, Douglas Chen, Rike
+                                Möller, Lorenzo Tseng
+                            </p>
+                            <p>Peter’s case outline & possible issues</p>
+                            <a href="./homeworks/htmlfile/HW4.html" class="anchor-btn">See more <i
+                                    class="fas fa-arrow-right pd-lt-10"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mb-30">
+                    <div class="service-box bg-white text-center">
+                        <div class="icon-text">
+                            <h4 class="title-box">How to Help Tina? SDM in people with dementia</h4>
+                            <p>Students : Lu, Hsiao-Chun,Chen, Ching-Yi,Cui, Jia-Wei,Celina Rosery,Jana Barbara,Judith
+                                Kinkel</p>
+                            <p>Peter’s case outline & possible issues</p>
+                            <a href="./homeworks/htmlfile/HW5.html" class="anchor-btn">See more <i
+                                    class="fas fa-arrow-right pd-lt-10"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mb-30">
+                    <div class="service-box bg-white text-center">
+                        <div class="icon-text">
+                            <h4 class="title-box">Interdisciplinary Seminar on Decision-Making in Persons with
+                                Disabilities</h4>
+                            <p>Students : Marvin Büsselmann, Michaela Friedrich Chi-Jean Tang, Shao-Chia Li, Yi-Sheng
+                                Tseng</p>
+                            <p>Peter’s case outline & possible issues</p>
+                            <a href="./homeworks/htmlfile/HW6.html" class="anchor-btn">See more <i
+                                    class="fas fa-arrow-right pd-lt-10"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mb-30">
+                    <div class="service-box bg-white text-center">
+                        <div class="icon-text">
+                            <h4 class="title-box">Family Planning </h4>
+                            <p>Students : Klara Gellrich , Anna Kallabis, Alena Stamler , Pei-Chi Tseng, Li-Chieh Wang ,
+                                Pin-Yue Sung</p>
+                            <p>Peter’s case outline & possible issues</p>
+                            <a href="./homeworks/htmlfile/HW7.html" class="anchor-btn">See more <i
+                                    class="fas fa-arrow-right pd-lt-10"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mb-30">
+                    <div class="service-box bg-white text-center">
+                        <div class="icon-text">
+                            <h4 class="title-box">FAMILY PLANNING</h4>
+                            <p>Students : By Anne Birnbaum, Laura Sauer, Pia Baier, Syuan-Cing Huang, Su-Hsin Sun,
+                                Tai-Chen Hsiao.</p>
+                            <p>Peter’s case outline & possible issues</p>
+                            <a href="./homeworks/htmlfile/HW8.html" class="anchor-btn">See more <i
+                                    class="fas fa-arrow-right pd-lt-10"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <section id="cta" class="cta">
-            <div class="container" data-aos="zoom-out">
-                <div class="row g-5">
-                    <div class="col-lg-4 col-md-6 order-first">
-                        <div class="img">
-                            <img src="assets/images/pic_cat.jpg" alt="" class="img-fluid">
+        </div>
+    </div>
+
+    <!-- End Services -->
+
+    <!-- Contact -->
+    <div class="contact section-padding" data-scroll-index='3'>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 section-title text-center">
+                    <h3>Contact Us For More</h3>
+                    <p>See our more website.</p>
+                    <span class="section-title-line"></span>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-30">
+                    <div class="service-box bg-white text-center">
+                        <div class="icon"> <i class="fas fa-comments"></i> </div>
+                        <div class="icon-text">
+                            <h4 class="title-box">Website of Siehchuen Huang</h4>
+                            <p>Professor Sieh-Chuen Huang is an associate professor of civil law. She received her
+                                Bachelor Degree of Laws from NTU, Taiwan.</p>
+                            <a href="https://ntnu-lab.github.io/" class="anchor-btn">See more <i
+                                    class="fas fa-arrow-right pd-lt-10"></i></a>
                         </div>
                     </div>
-                    <div
-                        class="col-lg-8 col-md-6 content d-flex flex-column justify-content-center order-last order-md-first">
-                        <h3>Hsuan-Lei Shao</h3>
-                        <p> Hsuan-Lei Shao is a Ph.D., an associate Prof., the Department of Eastasia Studies (DEAS),
-                            National
-                            Taiwan Normal
-                            University(NTNU). He works on digital humanities/ social science research. He can do
-                            "textmining(Eng, Chn,
-                            Jpn), Deep learning/AI, Field-studies, R/python/html programming". He loves to explore
-                            knowledges. He has
-                            an opened mind and wish to cooperate with any fields scholars.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-30">
+                    <div class="service-box bg-white text-center">
+                        <div class="icon"> <i class="fas fa-comments"></i> </div>
+                        <div class="icon-text">
+                            <h4 class="title-box">Website of Hsuanlei Shao</h4>
+                            <p>He is a Ph.D., an associate Prof., the Department of Eastasia Studies (DEAS), National
+                                Taiwan Normal University(NTNU). </p>
+                            <a href="http://homepage.ntu.edu.tw/~schhuang/Welcome.html" class="anchor-btn">See more <i
+                                    class="fas fa-arrow-right pd-lt-10"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-30">
+                    <div class="service-box bg-white text-center">
+                        <div class="icon"> <i class="fas fa-comments"></i> </div>
+                        <div class="icon-text">
+                            <h4 class="title-box">Digital Humanities and Legal Analytics</h4>
+                            <p>Digital Humanities feat. Legal Analytics by H.L.Shao(NTNU) and S.C.Huang(NTU).</p>
+                            <a href="https://ntnu-lab.github.io/" class="anchor-btn">See more <i
+                                    class="fas fa-arrow-right pd-lt-10"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section><!-- End Call To Action Section -->
-    </main>
-    <!-- End #main -->
+        </div>
+    </div>
+    <!-- End Contact -->
 
-
-    <div id="preloader"></div>
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-            class="bi bi-arrow-up-short"></i></a>
-
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-    <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    <footer class="footer-copy">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>2018 &copy; Elegant. Website Designed by <a href="http://w3Template.com" target="_blank"
+                            rel="dofollow">W3
+                            Template</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-        crossorigin="anonymous"></script>
+    <!-- owl carousel js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- magnific-popup -->
+    <script src="js/jquery.fancybox.min.js"></script>
+
+    <!-- scrollIt js -->
+    <script src="js/scrollIt.min.js"></script>
+
+    <!-- isotope.pkgd.min js -->
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script>
+        $(window).on("scroll", function () {
+
+            var bodyScroll = $(window).scrollTop(),
+                navbar = $(".navbar");
+            navbar.addClass("nav-scroll");
+            $('.navbar-logo img').attr('src', 'images/logo-black.png');
+
+        });
+
+        $(window).on("load", function () {
+
+            var bodyScroll = $(window).scrollTop(),
+                navbar = $(".navbar");
+
+            /* smooth scroll
+              -------------------------------------------------------*/
+            $.scrollIt({
+                easing: 'swing',      // the easing function for animation
+                scrollTime: 900,       // how long (in ms) the animation takes
+                activeClass: 'active', // class given to the active nav element
+                onPageChange: null,    // function(pageIndex) that is called when page is changed
+                topOffset: -63
+            });
+
+        })
+
+    </script>
 </body>
 
 </html>

@@ -430,6 +430,8 @@ h6 {
     overflow: hidden;
     overflow: hidden !important;
     position: relative;
+    /* margin-left: 2%;
+    margin-right: 2%; */
 }
 
 .portfolio .gallery .item-img {

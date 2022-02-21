@@ -32,7 +32,8 @@
                     <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="0">Home</a> </li>
                     <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="1">Class Mentors</a> </li>
                     <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="2">Member Works</a> </li>
-                    <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="3">Fellows</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="3">Recent Works</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="4">Fellows</a> </li>
                 </ul>
             </div>
         </div>
@@ -262,20 +263,19 @@
     <!-- Gallery -->
     <div class="portfolio section-padding" data-scroll-index='3'>
         <div class="container-fluid">
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col-lg-12 section-title text-center">
                     <h3>Check our recent works</h3>
                     <p>Vestibulum elementum dui tempus dolor gravida, vel mattis erat fermentum.</p>
                     <span class="section-title-line"></span>
                 </div>
                 <div class="filtering text-center mb-30">
-                    <button type="button" data-filter='*' class="active">All</button>
-                    <button type="button" data-filter='.summer'>Dailylife</button>
-                    <button type="button" data-filter='.winter'>Discussion</button>
-                    <button type="button" data-filter='.rainy'>Lecture</button>
-                    <button type="button" data-filter='.spring'>Report</button>
+                    <button type="button" data-filter='.rainy' class="btn-1">Lecture</button>
+                    <button type="button" data-filter='.spring' class="btn-2">Report</button>
+                    <button type="button" data-filter='.winter' class="btn-3">Discussion</button>
+                    <button type="button" data-filter='.summer' class="btn-4">Dailylife</button>
                 </div>
-                <div class="gallery no-padding col-lg-12 col-sm-12">
+                <div class="gallery no-padding col-lg-10 col-sm-10">
                     <div class="col-lg-4 col-sm-6 winter no-padding">
                         <div class="item-img">
                             <a class="single-image" href="images/Discussion/分組討論照片紀錄1_20210513.jpg"></a>
@@ -524,7 +524,7 @@
     <!-- End Testimonials -->
 
     <!-- Contact -->
-    <div class="contact section-padding" data-scroll-index='3'>
+    <div class="contact section-padding" data-scroll-index='4'>
         <div class="container">
             <div class="row">
                 <div class="col-md-12 section-title text-center">
@@ -592,103 +592,10 @@
 
     <!-- isotope.pkgd.min js -->
     <script src="js/isotope.pkgd.min.js"></script>
-    <script>
-        $(window).on("scroll", function() {
-            var bodyScroll = $(window).scrollTop(),
-                navbar = $(".navbar");
-            navbar.addClass("nav-scroll");
-            $('.navbar-logo img').attr('src', 'images/logo-black.png');
-
-        });
-
-        $(window).on("load", function() {
-            var bodyScroll = $(window).scrollTop(),
-                navbar = $(".navbar");
-
-            /* smooth scroll
-              -------------------------------------------------------*/
-            $.scrollIt({
-
-                easing: 'swing', // the easing function for animation
-                scrollTime: 900, // how long (in ms) the animation takes
-                activeClass: 'active', // class given to the active nav element
-                onPageChange: null, // function(pageIndex) that is called when page is changed
-                topOffset: -63
-            });
-
-            /* isotope
-            -------------------------------------------------------*/
-            var $gallery = $('.gallery').isotope({});
-            $('.gallery').isotope({
-
-                // options
-                itemSelector: '.item-img',
-                transitionDuration: '0.5s',
-
-            });
 
 
-            $(".gallery .single-image").fancybox({
-                'transitionIn': 'elastic',
-                'transitionOut': 'elastic',
-                'speedIn': 600,
-                'speedOut': 200,
-                'overlayShow': false
-            });
 
-
-            /* filter items on button click
-            -------------------------------------------------------*/
-            $('.filtering').on('click', 'button', function() {
-
-                var filterValue = $(this).attr('data-filter');
-
-                $gallery.isotope({
-                    filter: filterValue
-                });
-
-            });
-
-            $('.filtering').on('click', 'button', function() {
-
-                $(this).addClass('active').siblings().removeClass('active');
-
-            });
-
-        })
-
-        $(function() {
-            $(".cover-bg").each(function() {
-                var attr = $(this).attr('data-image-src');
-
-                if (typeof attr !== typeof undefined && attr !== false) {
-                    $(this).css('background-image', 'url(' + attr + ')');
-                }
-
-            });
-
-            /* sections background color from data background
-            -------------------------------------------------------*/
-            $("[data-background-color]").each(function() {
-                $(this).css("background-color", $(this).attr("data-background-color"));
-            });
-
-
-            /* Owl Caroursel testimonial
-              -------------------------------------------------------*/
-
-            $('.testimonials .owl-carousel').owlCarousel({
-                loop: true,
-                autoplay: true,
-                items: 1,
-                margin: 30,
-                dots: true,
-                nav: false,
-
-            });
-
-        });
-    </script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
